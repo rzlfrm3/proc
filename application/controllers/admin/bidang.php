@@ -82,5 +82,5 @@ class Bidang extends CI_Controller {
 		if($res>=1){
 			redirect('admin/bidang/index');
 		}
-	}
+	}jhghj
 }
