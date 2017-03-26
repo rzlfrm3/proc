@@ -22,7 +22,7 @@ class Bidang extends CI_Controller {
 		$this->load->helper('form_helper');
 		$data = array(
 		'kepalabidang' => $this->model_kepalabidang->kepalabidang(),
-		'kepalabidang_selected' => $this->input->post('tb_kepalabidang') ? $this->input->post('tb_kepalabidang') : '', // untuk edit ganti '' menjadi data dari database misalnya $row->provinsi
+		'kepalabidang_selected' => $this->input->post('tb_kepalabidang') ? $this->input->post('tb_kepalabidang') : '', 
 	);
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; //judul title
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
