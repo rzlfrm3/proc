@@ -65,7 +65,7 @@ class Alternatif extends CI_Controller {
 		$where = array('id_alternatif' => $id_alternatif);
 		$res = $this->model_alternatif->deletedata('tb_alternatif',$where);
 		if($res>=1){
-			redirect('admin/alternatif/index');sa
+			redirect('admin/alternatif/index');
 		}
 	}
 }
