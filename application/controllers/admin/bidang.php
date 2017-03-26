@@ -26,7 +26,7 @@ class Bidang extends CI_Controller {
 	);
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; //judul title
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
-        $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
+        $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); 
 		$this->load->view('admin/form_tambahbidang', $data);
 	}
 	public function do_insert(){
