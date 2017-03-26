@@ -14,8 +14,8 @@ class Alternatif extends CI_Controller {
 	
 	public function add_data(){
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; 
-		$data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
-		$data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
+		$data['jlhnotif'] =$this->model_notifikasi->notif_count();  
+		$data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); 
 	  
 		$this->load->view('admin/form_tambahalternatif',$data);
 	}
