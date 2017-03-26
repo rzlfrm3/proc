@@ -42,9 +42,9 @@ class Alternatif extends CI_Controller {
 		"id_alternatif" => $mhs[0]['id_alternatif'],
 		"nama_alternatif" => $mhs[0]['nama_alternatif'],
 		);
-		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; //judul title
-        $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
-        $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
+		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; 
+        $data['jlhnotif'] =$this->model_notifikasi->notif_count();  
+        $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); 
 		$this->load->view('admin/form_editalternatif',$data);
 	}
 	public function do_update(){
