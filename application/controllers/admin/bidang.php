@@ -55,7 +55,7 @@ class Bidang extends CI_Controller {
 		'kepalabidang' => $this->model_kepalabidang->kepalabidang(),
 		'kepalabidang_selected' => $this->input->post('tb_bidang') ? $this->input->post('tb_bidang') : '',
 		);
-		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; //judul title
+		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; 
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
 		$this->load->view('admin/form_editbidang',$data);
