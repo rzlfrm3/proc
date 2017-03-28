@@ -40,6 +40,6 @@ class Bobot extends CI_Controller {
 		$res = $this->model_bobot->deletedata('tb_bobot',$where);
 		if($res>=1){
 			redirect('admin/bobot/index');
-		}
+		}sdf
 	}
 }
