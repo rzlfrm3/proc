@@ -11,7 +11,7 @@ class Home extends CI_Controller {
 	
 	public function index() {
 		
-		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; //judul tit
+		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; //judu
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); 
 		$this->load->view('admin/home', $data);
