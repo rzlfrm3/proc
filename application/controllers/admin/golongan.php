@@ -68,7 +68,7 @@ class Golongan extends CI_Controller {
 		$where = array('id_golongan' => $id_golongan);
 		$res = $this->model_golongan->deletedata('tb_golongan',$where);
 		if($res>=1){
-			redirect('admin/golongan/index');
+			redirect('admin/golongan/');
 		}
 	}
 }
