@@ -44,7 +44,7 @@ class Golongan extends CI_Controller {
 		);
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; 
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
-        $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
+        $data['notifikasi'] =$this->model_notifikasi->getnotifikasi();
 		$data ['data'] = $this->model_golongan->GetUser();
 		$this->load->view('admin/form_editgolongan',$data);
 	}
