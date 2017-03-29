@@ -6,7 +6,7 @@ class Golongan extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; //judul title
-        $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
+        $data['jlhnotif'] =$this->model_notifikasi->notif_count(); 
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); 
 		$data ['data'] = $this->model_golongan->GetUser();
 		$this->load->view('admin/tabel_golongan', $data);
