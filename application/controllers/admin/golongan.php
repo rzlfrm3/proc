@@ -42,7 +42,7 @@ class Golongan extends CI_Controller {
 		"nama_golongan" => $mhs[0]['nama_golongan'],
 		"pangkat" => $mhs[0]['pangkat'],
 		);
-		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; //judul title
+		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; 
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
 		$data ['data'] = $this->model_golongan->GetUser();
