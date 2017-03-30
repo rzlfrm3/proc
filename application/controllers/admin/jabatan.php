@@ -40,7 +40,7 @@ class Jabatan extends CI_Controller {
 		"nama_jabatan" => $mhs[0]['nama_jabatan'],
 		);
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; //judul e
-        $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
+        $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung 
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilk
 		$data['data'] = $this->model_jabatan->GetUser();
 		$this->load->view('admin/form_editjabatan',$data);
