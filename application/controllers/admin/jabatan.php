@@ -13,7 +13,7 @@ class Jabatan extends CI_Controller {
 	}
 	public function add_data(){
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; 
-        $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah 
+        $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung 
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
 		$data['data'] = $this->model_jabatan->GetUser();
 		$this->load->view('admin/form_tambahjabatan',$data);
