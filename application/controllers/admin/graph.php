@@ -18,3 +18,8 @@ $this->load->view('admin/graph', $data);
 }dfghjgfgdjhgsjgfsj 
 sdfgjshdfj
 dsfgjhsdfsf
+jhfsjhgfd
+	sdgfjshg
+	sdfjhksjfd
+	sdjfhksjfd
+	sdfjgsfd
