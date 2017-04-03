@@ -19,5 +19,3 @@ $this->load->view('admin/graph', $data);
 sdfgjshdfj
 dsfgjhsdfsf
 jhfsjhgfd
-	sdgfjshg
-	sdfj
