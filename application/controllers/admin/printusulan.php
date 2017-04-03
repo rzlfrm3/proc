@@ -12,7 +12,7 @@ class Printusulan extends CI_Controller {
 	{
 		
 		$data ['data']= $this->model_usulan->GetUser();
-		$this->load->view('admin/tabel_usulan',$data);
+		$this->load->view('admin/tabel_usulan',$data); // //
 	}
 	public function add_data(){
 		$this->load->model('model_usulan');
