@@ -7,7 +7,7 @@ class Jenisusulan extends CI_Controller {
 	{
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; //judul title
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
-        $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
+        $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); 
 		$data ['data']= $this->model_jenisusulan->GetUser();
 		$this->load->view('admin/tabel_jenisusulan', $data);
 	}
