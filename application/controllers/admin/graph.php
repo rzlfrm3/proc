@@ -15,7 +15,4 @@ $data['graph'] = $this->model_graph->graph();
 $this->load->view('admin/graph', $data);
 }
  
-}dfghjgfgdjhgsjgfsj 
-sdfgjshdfj
-dsfgjhsdfsf
-jhfsjhgfd
+}dfghjhfsjhgfd
