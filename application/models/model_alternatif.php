@@ -18,4 +18,4 @@ class Model_alternatif extends CI_Model {
 		$res = $this->db->delete($tabelName,$where);
 		return $res;
 	}
-}
+} // //
