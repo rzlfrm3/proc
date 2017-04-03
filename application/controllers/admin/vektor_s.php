@@ -5,13 +5,13 @@ class Vektor_s extends CI_Controller {
 	
 	public function index() {
 		
-			$data['data'] = $this->model_vektor_s->GetUser();
-            $this->load->view('admin/tabel_vektor_s', $data);
+			$data['data'] = $this->model_vektor_s->GetUser(); // 
+            $this->load->view('admin/tabel_vektor_s', $data);// // //
 			
 	}
 	
 	 public function edit_data($id_alternatif){
-		$mhs = $this->model_vektor_s2->GetUser("where id_alternatif = '$id_alternatif'");
+		$mhs = $this->model_vektor_s2->GetUser("where id_alternatif = '$id_alternatif'"); //
 		$data = array(
 		"id_alternatif" => $mhs[0]['id_alternatif'],
 		"vektor_s" => $mhs[0]['vektor_s'],
