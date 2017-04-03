@@ -16,5 +16,4 @@ $this->load->view('admin/graph', $data);
 }
  
 }
-ashghdagsda
-	asjhdgjahs
+ash
