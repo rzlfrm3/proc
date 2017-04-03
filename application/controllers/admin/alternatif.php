@@ -22,7 +22,7 @@ class Alternatif extends CI_Controller {
 	
 	public function do_insert(){
 		$id_alternatif = $_POST['id_alternatif'];
-		$nama_alternatif = $_POST['nama_alternatif'];
+		$nama_alternatif = $_POST['nama_alternatif']; //gh
 		
 		$data_insert = array(
 		'id_alternatif' => $id_alternatif,
