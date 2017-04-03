@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Bobot extends CI_Controller {
 	
 	public function index() {
-       $data['data'] = $this->model_bobot->GetUser(); //
+       $data['data'] = $this->model_bobot->GetUser(); 
        $this->load->view('admin/tabel_bobot', $data);
 	}
 	
