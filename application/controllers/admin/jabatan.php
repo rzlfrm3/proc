@@ -34,7 +34,7 @@ class Jabatan extends CI_Controller {
 	}
 	
 	 public function edit_data($id_jabatan){
-		$mhs = $this->model_jabatan->GetUser("where id_jabatan = '$id_jabatan'");
+		$mhs = $this->model_jabatan->GetUser("where id_jabatan = '$id_jabatan'"); /// //
 		$data = array(
 		"id_jabatan" => $mhs[0]['id_jabatan'],
 		"nama_jabatan" => $mhs[0]['nama_jabatan'],
