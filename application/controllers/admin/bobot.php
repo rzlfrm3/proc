@@ -10,7 +10,7 @@ class Bobot extends CI_Controller {
 	
 	public function add_data(){
 		$this->load->model('model_bobot');
-		$this->load->helper('form_helper');
+		$this->load->helper('form_helper'); // //
 		$data = array(
 		'kriteria' => $this->model_bobot->kriteria(),
 		'kriteria_selected' => $this->input->post('tb_kriteria') ? $this->input->post('tb_kriteria') : '', 
