@@ -34,7 +34,7 @@ class Jenisusulan extends CI_Controller {
 	}
 	
 	 public function edit_data($id_jenisusulan){
-		$mhs = $this->model_jenisusulan->GetUser("where id_jenisusulan = '$id_jenisusulan'");
+		$mhs = $this->model_jenisusulan->GetUser("where id_jenisusulan = '$id_jenisusulan'"); // //
 		$data = array(
 		"id_jenisusulan" => $mhs[0]['id_jenisusulan'],
 		"nama_jenisusulan" => $mhs[0]['nama_jenisusulan'],
