@@ -7,7 +7,7 @@ class Model_bidang extends CI_Model {
 		->join('tb_kepalabidang','tb_kepalabidang.id_kepalabidang=tb_bidang.id_kepalabidang');
 		return $this->db->get('tb_bidang')->result();
 		$data = $this->db->query('select * from tb_bidang'.$where);
-		return $data->result_array(); // //
+		return $data->result_array(); // /
 		
 	}
 	public function insertdata($tabelName,$data){
