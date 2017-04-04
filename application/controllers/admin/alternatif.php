@@ -34,7 +34,7 @@ class Alternatif extends CI_Controller {
 		}else{
 			echo "<h2>Insert Data gagal</h2>";
 		}
-	}
+	}  ///
 	
 	public function edit_data($id_alternatif){
 		$mhs = $this->model_alternatif->GetUser("where id_alternatif = '$id_alternatif'");
