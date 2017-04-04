@@ -19,7 +19,7 @@ class Rangking extends CI_Controller {
 		'bobot_selected' => $this->input->post('tb_bobot') ? $this->input->post('tb_bobot') : '', 
 		);
 		
-		$this->load->view('admin/form_tambahrangking',$data);
+		$this->load->view('admin/form_tambahrangking',$data); // // //
 	}
 	
 	public function do_insert(){
