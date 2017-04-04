@@ -26,7 +26,7 @@ class Printusulan extends CI_Controller {
 		'pejabatpengadaan_selected' => $this->input->post('tb_pejabatpengadaan') ? $this->input->post('tb_pejabatpengadaan') : '',
 	    );
 		$data['id_usulan'] = $this->id_usulan->buat_id();
-		$this->load->view('admin/form_tambahusulan', $data);
+		$this->load->view('admin/form_tambahusulan', $data); // //
 	}
 	public function do_insert(){
 		$id_usulan = $_POST['id_usulan'];
