@@ -15,7 +15,7 @@ class Model_bidang extends CI_Model {
 		return $res;
 	}
 	public function updatedata($tabelName,$data,$where){
-		$res = $this->db->update($tabelName,$data,$where);
+		$res = $this->db->update($tabelName,$data,$where); // //
 		return $res;
 	}
 	public function deletedata($tabelName,$where){
