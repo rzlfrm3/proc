@@ -8,7 +8,6 @@ class Model_bidang extends CI_Model {
 		return $this->db->get('tb_bidang')->result();
 		$data = $this->db->query('select * from tb_bidang'.$where);
 		return $data->result_array(); // 
-		
 	}
 	public function insertdata($tabelName,$data){
 		$res = $this->db->insert($tabelName,$data);
