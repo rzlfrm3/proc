@@ -34,7 +34,7 @@ class Kategori extends CI_Controller {
 	}
 	
 	 public function edit_data($id_kategori){
-		$mhs = $this->model_kategori->GetUser("where id_kategori = '$id_kategori'");
+		$mhs = $this->model_kategori->GetUser("where id_kategori = '$id_kategori'"); // //
 		$data = array(
 		"id_kategori" => $mhs[0]['id_kategori'],
 		"nama_kategori" => $mhs[0]['nama_kategori'],
