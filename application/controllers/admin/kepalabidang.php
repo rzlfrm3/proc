@@ -35,7 +35,7 @@ class Kepalabidang extends CI_Controller {
 	
 	 public function edit_data($id_kepalabidang){
 		$mhs = $this->model_kepalabidang->GetUser("where id_kepalabidang = '$id_kepalabidang'");
-		$data = array(
+		$data = array(  
 		"id_kepalabidang" => $mhs[0]['id_kepalabidang'],
 		"nama_kepalabidang" => $mhs[0]['nama_kepalabidang'],
 		);
