@@ -32,7 +32,7 @@ class Vektor_s extends CI_Controller {
 		$data['vektor_v']='Warning, nilai kedua tidak boleh 0 !';
 		$this->db->insert('tb_vektor_v',$data);
 		$data['data'] = $this->model_vektor_s->GetUser();
-		$this->load->view('admin/tabel_vektor_s',$data); // //
+		$this->load->view('admin/tabel_vektor_s',$data); // /
 		
 	}
 	
