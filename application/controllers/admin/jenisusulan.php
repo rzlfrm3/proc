@@ -16,7 +16,7 @@ class Jenisusulan extends CI_Controller {
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
 		$data ['data']= $this->model_jenisusulan->GetUser();
-		$this->load->view('admin/form_tambahjenisusulan', $data);
+		$this->load->view('admin/form_tambahjenisusulan', $data); //
 	}
 	public function do_insert(){
 		$id_jenisusulan = $_POST['id_jenisusulan'];
