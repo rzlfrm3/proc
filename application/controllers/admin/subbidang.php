@@ -16,7 +16,7 @@ class Subbidang extends CI_Controller {
 		$this->load->helper('form_helper');
 		$data = array(
 		'bidang' => $this->model_subbidang1->bidang(),
-		'bidang_selected' => $this->input->post('tb_bidang') ? $this->input->post('tb_bidang') : '', // untuk edit ganti '' menjadi data dari database misalnya $row->provinsi
+		'bidang_selected' => $this->input->post('tb_bidang') ? $this->input->post('tb_bidang') : '', // unt edit ganti '' menjadi data dari database misalnya $row->provinsi
 		);
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; //judul title
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
