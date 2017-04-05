@@ -16,7 +16,7 @@ class Kategori extends CI_Controller {
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
 		$data ['data']= $this->model_kategori->GetUser();
-		$this->load->view('admin/form_tambahkategori', $data);
+		$this->load->view('admin/form_tambahkategori', $data); //
 	}
 	public function do_insert(){
 		$id_kategori = $_POST['id_kategori'];
