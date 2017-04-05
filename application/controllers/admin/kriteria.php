@@ -26,7 +26,7 @@ class Kriteria extends CI_Controller {
 		'id_kriteria' => $id_kriteria,
 		'nama_kriteria' => $nama_kriteria
 		);
-		$res = $this->model_kriteria2->insertdata('tb_kriteria',$data_insert);
+		$res = $this->model_kriteria2->insertdata('tb_kriteria',$data_insert); //
 		if($res>=1){
 			redirect('admin/kriteria/index');
 		}else{
