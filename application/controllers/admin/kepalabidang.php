@@ -25,7 +25,7 @@ class Kepalabidang extends CI_Controller {
 		'id_kepalabidang' => $id_kepalabidang,
 		'nama_kepalabidang' => $nama_kepalabidang
 		);
-		$res = $this->model_kepalabidang->insertdata('tb_kepalabidang',$data_insert);
+		$res = $this->model_kepalabidang->insertdata('tb_kepalabidang',$data_insert); //
 		if($res>=1){
 			redirect('admin/kepalabidang/index');
 		}else{
