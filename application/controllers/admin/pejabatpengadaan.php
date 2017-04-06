@@ -5,7 +5,7 @@ class Pejabatpengadaan extends CI_Controller {
 
 	public function index()
 	{
-		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; 
+		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; ghjhgjhgjg
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postin
 		$data['data'] = $this->model_pejabatpengadaan->GetUser();
