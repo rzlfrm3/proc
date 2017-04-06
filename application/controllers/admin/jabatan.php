@@ -6,7 +6,7 @@ class Jabatan extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter';  //
-        $data['jlhnotif'] =$this->model_notifikasi->notif_count();  
+        $data['jlhnotif'] =$this->model_notifikasi->notif_count();  hghgdajhgdjahgds //
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); 
 		$data['data'] = $this->model_jabatan->GetUser();
 		$this->load->view('admin/tabel_jabatan', $data);
