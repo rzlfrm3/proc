@@ -7,7 +7,7 @@ public function __construct()
 {
 parent::__construct();
 $this->load->model('model_graph'); // 
-}
+} fdjhsadgjdhasgdjas
  
 public function index()
 {
