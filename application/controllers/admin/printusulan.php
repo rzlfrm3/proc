@@ -11,7 +11,7 @@ class Printusulan extends CI_Controller {
 	public function index()
 	{
 		
-		$data ['data']= $this->model_usulan->GetUser();
+		$data ['data']= $this->model_usulan->GetUser(); jhgjhgjhgj
 		$this->load->view('admin/tabel_usulan',$data); // 
 	}
 	public function add_data(){
