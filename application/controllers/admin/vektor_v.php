@@ -7,7 +7,7 @@ class Vektor_v extends CI_Controller {
 		
 			$data['data'] = $this->model_vektor_v->GetUser();
             $this->load->view('admin/tabel_vektor_v', $data); 
-			
+			gjhjgjhgj
 	}
 	
 }
