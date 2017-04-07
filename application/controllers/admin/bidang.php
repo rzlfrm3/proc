@@ -12,7 +12,7 @@ class Bidang extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; //
-        $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //
+        $data['jlhnotif'] =$this->model_notifikasi->notif_count();  
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); 
 		$data ['data']= $this->model_bidang->GetUser();
 		$this->load->view('admin/tabel_bidang',$data);
