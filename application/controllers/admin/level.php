@@ -5,7 +5,7 @@ class Level extends CI_Controller {
 
 	public function index()
 	{
-		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; hgjgjhgjhg
+		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; hgjgjh
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
 		$data ['data']= $this->model_level->GetUser();
