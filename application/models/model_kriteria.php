@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Model_kriteria extends CI_Model {
-	public function GetUser($where=""){
+	public function GetUser($where=""){ //
 		$this->db->select('tb_kriteria.id_kriteria,tb_kriteria.nama_kriteria,tb_bobot.id_kriteria,tb_bobot.nilai_bobot,tb_bobot.hasil_bobot,tb_bobot.jum_nilai')
 		->join('tb_bobot','tb_bobot.id_kriteria=tb_kriteria.id_kriteria');
 		return $this->db->get('tb_kriteria')->result();
