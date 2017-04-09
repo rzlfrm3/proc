@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Model_jabatan extends CI_Model {
 	public function GetUser($where=""){
-		$data = $this->db->query('select * from tb_jabatan '.$where);
+		$data = $this->db->query('select * from tb_jabatan '.$where); //
 		return $data->result_array();
 	}
 	public function insertdata($tabelName,$data){
