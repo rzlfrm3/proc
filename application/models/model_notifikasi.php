@@ -8,7 +8,7 @@ class Model_notifikasi extends CI_Model {
         parent::__construct();
     }
     function notif_count() {
-        $this->db->from($this->tabel);
+        $this->db->from($this->tabel); //
         $query = $this->db->get();
         return $query->num_rows();
     }
