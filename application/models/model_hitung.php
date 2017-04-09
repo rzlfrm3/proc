@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Model_hitung extends CI_Model {
-	public function GetUser($where=""){
+	public function GetUser($where=""){ //
 		$data = $this->db->query('select * from tb_hitung '.$where);
 		return $data->result_array();
 	}
