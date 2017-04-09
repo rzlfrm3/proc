@@ -6,7 +6,7 @@ class Model_bobot extends CI_Model {
 		$this->db->select('tb_bobot.nama_bobot,tb_bobot.id_kriteria,tb_bobot.nilai_bobot,tb_bobot.hasil_bobot,tb_bobot.jum_nilai,tb_kriteria.id_kriteria,tb_kriteria.nama_kriteria')
 		->join('tb_kriteria','tb_kriteria.id_kriteria=tb_bobot.id_kriteria');
 		return $this->db->get('tb_bobot')->result();
-		$data = $this->db->query('select * from tb_bobot'.$where);
+		$data = $this->db->query('select * from tb_bobot'.$where); //
 		return $data->result_array();
 	}
 	public function insertdata($tabelName,$data){
