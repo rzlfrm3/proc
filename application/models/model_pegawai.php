@@ -7,7 +7,7 @@ class Model_pegawai extends CI_Model {
 		->join('tb_subbidang','tb_subbidang.id_subbidang=tb_pegawai.id_subbidang')
 		->join('tb_level','tb_level.id_level=tb_pegawai.id_level')
 		->join('tb_golongan','tb_golongan.id_golongan=tb_pegawai.id_golongan')
-		->join('tb_jabatan','tb_jabatan.id_jabatan=tb_pegawai.id_jabatan');
+		->join('tb_jabatan','tb_jabatan.id_jabatan=tb_pegawai.id_jabatan'); //
 		return $this->db->get('tb_pegawai')->result();
 		$data = $this->db->query('select * from tb_pegawai'.$where);
 		return $data->result_array();
