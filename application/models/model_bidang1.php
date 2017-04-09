@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Model_bidang1 extends CI_Model {
 	public function GetUser($where=""){
 		$data = $this->db->query('select * from tb_bidang '.$where);
-		return $data->result_array();
+		return $data->result_array(); //
 	}
 	public function insertdata($tabelName,$data){
 		$res = $this->db->insert($tabelName,$data);
