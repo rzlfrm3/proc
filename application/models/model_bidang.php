@@ -6,7 +6,7 @@ class Model_bidang extends CI_Model {
 		$this->db->select('tb_bidang.id_bidang,tb_bidang.nama_bidang,tb_bidang.id_kepalabidang,tb_kepalabidang.id_kepalabidang,tb_kepalabidang.nama_kepalabidang')
 		->join('tb_kepalabidang','tb_kepalabidang.id_kepalabidang=tb_bidang.id_kepalabidang');
 		return $this->db->get('tb_bidang')->result();
-		$data = $this->db->query('select * from tb_bidang'.$where);
+		$data = $this->db->query('select * from tb_bidang'.$where); //
 		return $data->result_array(); // 
 		
 	}
