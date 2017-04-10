@@ -6,7 +6,7 @@ class Kriteria extends CI_Controller {
 	public function index() {
 		
 			$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; gfhfg
-			$data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
+			$data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung umlah post
 			$data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
 			$data['data'] = $this->model_kriteria2->GetUser();
             $this->load->view('admin/tabel_kriteria', $data);
