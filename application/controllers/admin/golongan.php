@@ -9,7 +9,7 @@ class Golongan extends CI_Controller {
         $data['jlhnotif'] =$this->model_notifikasi->notif_count(); 
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); 
 		$data ['data'] = $this->model_golongan->GetUser();
-		$this->load->view('admin/tabel_golongan', $data); jagjdahsgjhsad
+		$this->load->view('admin/tabel_golongan', $data); jagjda
 	}
 	public function add_data(){
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter';  
