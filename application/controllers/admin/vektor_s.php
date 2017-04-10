@@ -24,7 +24,7 @@ class Vektor_s extends CI_Controller {
 		
 		$data['id_alternatif']=$this->input->post('id_alternatif',true);
 		$data['vektor_s']=$this->input->post('vektor_s',true);
-		$data['jumlah_vektor_s']=$this->input->post('jumlah_vektor_s',true);
+		$data['jumlah_vektor_s']=$this->input->post('jumlah_vektor_s',true); //
 		$data['vektor_v']=$this->input->post('vektor_v',true);
 		if ($data['jumlah_vektor_s']>0)
         $data['vektor_v']=$data['vektor_s']/$data['jumlah_vektor_s']; 
