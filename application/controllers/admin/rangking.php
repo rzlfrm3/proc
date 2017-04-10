@@ -30,7 +30,7 @@ class Rangking extends CI_Controller {
 		$data['nilai_normalisasi']=(int)$this->input->post('hasil_bobot',true);
 		$data['id_kriteria2']=$this->input->post('id_kriteria2',true);
 		$data['nilai_rangking2']=$this->input->post('nilai_rangking2',true);
-		$data['nilai_normalisasi2']=(int)$this->input->post('hasil_bobot2',true);
+		$data['nilai_normalisasi2']=(int)$this->input->post('hasil_bobot2',true); //
 		$data['id_kriteria3']=$this->input->post('id_kriteria3',true);
 		$data['nilai_rangking3']=$this->input->post('nilai_rangking3',true);
 		$data['nilai_normalisasi3']=(int)$this->input->post('hasil_bobot3',true);
