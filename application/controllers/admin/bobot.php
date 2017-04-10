@@ -25,7 +25,7 @@ class Bobot extends CI_Controller {
 		$data['nama_bobot']=$this->input->post('nama_bobot',true);
 		$data['id_kriteria']=(int)$this->input->post('id_kriteria',true);
 		$data['nilai_bobot']=(int)$this->input->post('nilai_bobot',true);
-		$data['hasil_bobot']=(int)$this->input->post('hasil_bobot',true);
+		$data['hasil_bobot']=(int)$this->input->post('hasil_bobot',true); //
 		$data['jum_nilai']=(int)$this->input->post('jum_nilai',true);
 		 if ($data['hasil_bobot']>0)
         $data['jum_nilai']=$data['nilai_bobot']/$data['hasil_bobot']; 
