@@ -6,7 +6,7 @@ class Home extends CI_Controller {
 	public function __construct() {
         parent::__construct();
         $this->load->model('model_notifikasi'); 
-        $this->load->helper('form','url');  hgsjhgdjhd
+        $this->load->helper('form','url');  hgsjhgdj
     }
 	
 	public function index() {
