@@ -11,7 +11,7 @@ class Vektor_s extends CI_Controller {
 	}
 	
 	 public function edit_data($id_alternatif){
-		$mhs = $this->model_vektor_s2->GetUser("where id_alternatif = '$id_alternatif'"); //hgjhghj
+		$mhs = $this->model_vektor_s2->GetUser("where id_alternatif = '$id_alternatif'"); //hgjh
 		$data = array(
 		"id_alternatif" => $mhs[0]['id_alternatif'],
 		"vektor_s" => $mhs[0]['vektor_s'],
