@@ -13,7 +13,7 @@ class Usulan extends CI_Controller {
 	{
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter';  
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
-        $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
+        $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postn
 		$data ['data']= $this->model_usulan->GetUser();
 		$this->load->view('admin/tabel_usulan',$data);
 		$tgldv=time();
