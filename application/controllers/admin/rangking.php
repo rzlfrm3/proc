@@ -10,7 +10,7 @@ class Rangking extends CI_Controller {
 	}
 	
 	public function add_data(){
-		$this->load->model('model_rangking'); // jhghjghgjhgjh
+		$this->load->model('model_rangking'); // jhghjg
 		$this->load->helper('form_helper'); // 
 		$data = array(
 		'alternatif' => $this->model_rangking->alternatif(),
