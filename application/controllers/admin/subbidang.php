@@ -6,7 +6,7 @@ class Subbidang extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter';  
-        $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumla
+        $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung 
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
 		$data['data'] = $this->model_subbidang->GetUser();
 		$this->load->view('admin/tabel_subbidang', $data);
