@@ -5,7 +5,7 @@ class Kepalabidang extends CI_Controller {
 
 	public function index()
 	{
-		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; fhfh
+		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; 
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan is
 		$data['data'] = $this->model_kepalabidang->GetUser();
