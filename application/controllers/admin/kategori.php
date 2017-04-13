@@ -15,7 +15,7 @@ class Kategori extends CI_Controller {
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; //judul title
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
         $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
-		$data ['data']= $this->model_kategori->GetUser();
+		$data ['data']= $this->model_kategori->GetUser();//
 		$this->load->view('admin/form_tambahkategori', $data); //
 	}
 	public function do_insert(){
