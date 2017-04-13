@@ -30,7 +30,7 @@ class Usulanuser extends CI_Controller {
 		$data['id_usulan'] = $this->id_usulan->buat_id();
 		$data['title'] = 'Notifikasi seperti difacebook CodeIgniter'; //judul title
         $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah post
-        $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
+        $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan //
 		$data ['data']= $this->model_usulan->GetUser();
 		$this->load->view('admin/form_tambahusulanuser', $data);  // /
 	}
