@@ -6,7 +6,7 @@ class Bobot extends CI_Controller {
 	public function index() {
        $data['data'] = $this->model_bobot->GetUser(); 
        $this->load->view('admin/tabel_bobot', $data); // 
-	}
+	} //
 	
 	public function add_data(){
 		$this->load->model('model_bobot');
