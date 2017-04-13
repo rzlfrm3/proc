@@ -33,7 +33,7 @@ class Subbidang extends CI_Controller {
 		'nama_subbidang' => $nama_subbidang,
 		'id_bidang' => $id_bidang
 		);
-		$res = $this->model_subbidang->insertdata('tb_subbidang',$data_insert);
+		$res = $this->model_subbidang->insertdata('tb_subbidang',$data_insert); //
 		if($res>=1){
 			redirect('admin/subbidang/index');
 		}else{
