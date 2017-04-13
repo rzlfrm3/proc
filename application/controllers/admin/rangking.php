@@ -5,7 +5,7 @@ class Rangking extends CI_Controller {
 	
 	public function index() {
 		
-       $data['data'] = $this->model_rangking->GetUser();
+       $data['data'] = $this->model_rangking->GetUser(); //
        $this->load->view('admin/tabel_rangking', $data);
 	}
 	
