@@ -34,7 +34,7 @@ class Pejabatpengadaan extends CI_Controller {
 	}
 	
 	 public function edit_data($id_pejabatpengadaan){
-		$mhs = $this->model_pejabatpengadaan->GetUser("where id_pejabatpengadaan = '$id_pejabatpengadaan'");
+		$mhs = $this->model_pejabatpengadaan->GetUser("where id_pejabatpengadaan = '$id_pejabatpengadaan'"); //
 		$data = array(
 		"id_pejabatpengadaan" => $mhs[0]['id_pejabatpengadaan'],
 		"nama_pejabatpengadaan" => $mhs[0]['nama_pejabatpengadaan'],
