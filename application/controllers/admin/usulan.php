@@ -33,7 +33,7 @@ class Usulan extends CI_Controller {
 		$this->load->helper('form_helper');
 		$data = array(
 		'jenisusulan' => $this->model_usulan1->jenisusulan(),
-		'jenisusulan_selected' => $this->input->post('tb_jenisusulan') ? $this->input->post('tb_jenisusulan') : '', 
+		'jenisusulan_selected' => $this->input->post('tb_jenisusulan') ? $this->input->post('tb_jenisusulan') : '',  //
 		'kategori' => $this->model_usulan1->kategori(),
 		'kategori_selected' => $this->input->post('tb_kategori') ? $this->input->post('tb_kategori') : '',
 		'pejabatpengadaan' => $this->model_usulan1->pejabatpengadaan(),
