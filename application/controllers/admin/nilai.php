@@ -8,7 +8,7 @@ class Nilai extends CI_Controller {
        $data['title'] = 'Notifikasi seperti difacebook CodeIgniter';
        $data['jlhnotif'] =$this->model_notifikasi->notif_count();  //menghitung jumlah pos
        $data['notifikasi'] =$this->model_notifikasi->getnotifikasi(); //menampilkan isi postingan
-	   $data['data'] = $this->model_nilai->GetUser();
+	   $data['data'] = $this->model_nilai->GetUser(); //
        $this->load->view('admin/tabel_nilai', $data);
 	}
 	
