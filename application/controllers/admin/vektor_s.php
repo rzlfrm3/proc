@@ -6,7 +6,7 @@ class Vektor_s extends CI_Controller {
 	public function index() {
 		
 			$data['data'] = $this->model_vektor_s->GetUser(); // 
-            $this->load->view('admin/tabel_vektor_s', $data);// // //
+            $this->load->view('admin/tabel_vektor_s', $data);//
 			
 	}
 	
