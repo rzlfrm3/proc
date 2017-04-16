@@ -10,7 +10,7 @@
     <title>Gentelella Alela! | </title>
 
     <!-- Bootstrap -->
-    <link href="<?php echo base_url()."assets/"; ?>vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()."assets/"; ?>vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> //
     <!-- Font Awesome -->
     <link href="<?php echo base_url()."assets/"; ?>vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
